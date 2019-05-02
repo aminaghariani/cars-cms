@@ -8,19 +8,13 @@
 		<!-- Author Meta -->
 		<meta name="author" content="colorlib">
 		<!-- Meta Description -->
-		<meta name=<?php echo get_bloginfo( 'description' ); ?>content="">
+		<meta name="description" content="">
 		<!-- Meta Keyword -->
 		<meta name="keywords" content="">
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
-		<div class="blog-header">
- <h1 class="blog-title">
- <a href="<?php bloginfo( 'wpurl' );?>"><?php echo
-get_bloginfo( 'name' ); ?></a></h1>
- <p class="lead blog-description"><?php echo get_bloginfo(
-'description' ); ?></p>
-</div> 
+	<title>Blogger</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
@@ -51,28 +45,17 @@ rel="stylesheet">
 						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						    <span class="navbar-toggler-icon"></span>
 						  </button>
-
+	   <h3> <a href="<?php bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h3>
+						
 						  <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
-						    <ul class="navbar-nav">
-								<li><a href="#home">Home</a></li>
-								<li><a href="#news">News</a></li>
-								<li><a href="#travel">Travel</a></li>
-								<li><a href="#fashion">fashion</a></li>
-								<li><a href="#team">team</a></li>
+						  
+						
+						  <ul class="navbar-nav">
+								<li><a href="#home">acceuil</a></li>
+								<li><a href="#news">presentation</a></li>
+								<li><a href="#travel">annonces auto</a></li>
 								<!-- Dropdown -->
-							    <li class="dropdown">
-							      <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-							        Pages
-							      </a>
-							      <div class="dropdown-menu">
-							        <a class="dropdown-item" href="single.html">Single</a>
-							        <a class="dropdown-item" href="category.html">Category</a>
-							        <a class="dropdown-item" href="search.html">Search</a>
-							        <a class="dropdown-item" href="archive.html">Archive</a>
-							        <a class="dropdown-item" href="generic.html">Generic</a>
-							        <a class="dropdown-item" href="elements.html">Elements</a>
-							      </div>
-							    </li>								
+							   				
 						    </ul>
 						  </div>						
 					</div>
