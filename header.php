@@ -33,40 +33,4 @@ rel="stylesheet">
 rel="stylesheet">
 			
 		</head>
-		<body>
-
-			<!-- Start Header Area -->
-			<header class="default-header">
-				<nav class="navbar navbar-expand-lg navbar-light">
-					<div class="container">
-						  <a class="navbar-brand" href="index.html">
-						  
-						  </a>
-						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						    <span class="navbar-toggler-icon"></span>
-						  </button>
-	   <h3> <a href="<?php bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h3>
-						
-						  <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
-						  
-						
-						  <ul class="navbar-nav">
-								<li><a href="#home">acceuil</a></li>
-								<li><a href="#news">presentation</a></li>
-								<li><a href="#travel">annonces auto</a></li>
-								<!-- Dropdown -->
-							   				
-						    </ul>
-						  </div>						
-					</div>
-				</nav>
-			</header><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Document sans nom</title>
-</head>
-
-<body>
-</body>
-</html>
+		
