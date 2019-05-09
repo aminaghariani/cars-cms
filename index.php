@@ -1,6 +1,8 @@
 		<!-- End Header Area -->
 <?php get_header();?>
 			<!-- start banner Area -->
+<?php get_template_part( 'sections', get_post_format() ); ?>
+<?php get_template_part( 'content', get_post_format() ); ?>
 			<section class="banner-area relative" id="home" data-parallax="scroll" data-image-src="img/header-bg.jpg">
 				<div class="overlay-bg overlay"></div>
 				<div class="container">
