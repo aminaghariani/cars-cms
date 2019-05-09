@@ -2,6 +2,9 @@
 				<div class="overlay-bg overlay"></div>
 				<div class="container">
 					<div class="row fullscreen">
+					<h1>
+								<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>								
+							</h1>
 							<a href="<?php bloginfo( 'template_directory' );?>"><!-- site title --></a>
 						<div class="head-bottom-meta d-flex justify-content-between align-items-end col-lg-12">
                             <?php the_date(); ?>

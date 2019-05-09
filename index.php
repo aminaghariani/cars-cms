@@ -8,10 +8,7 @@
 				<div class="container">
 					<div class="row fullscreen">
 						<div class="banner-content d-flex align-items-center col-lg-12 col-md-12">
-							<h1>
-								<a href="<?php the_permalink(); ?>"><?php
-the_title(); ?></a>								
-							</h1>
+							
 						</div>	
 						<div class="head-bottom-meta d-flex justify-content-between align-items-end col-lg-12">
 							

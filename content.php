@@ -10,6 +10,7 @@
 						</div>
 					</div>					
 					<div class="row">
+					
 						<div class="col-lg-3 col-md-6 single-fashion">
 							<img class="img-fluid" src="img/f1.jpg" alt="">
 							<p class="date">10 Jan 2018</p>
