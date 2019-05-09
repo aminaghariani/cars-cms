@@ -5,14 +5,13 @@
 					<h1>
 								<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>								
 							</h1>
-							<a href="<?php bloginfo( 'template_directory' );?>"><!-- site title --></a>
+							
 						<div class="head-bottom-meta d-flex justify-content-between align-items-end col-lg-12">
                             <?php the_date(); ?>
 							
 							<div class="col-lg-6 flex-row d-flex meta-right no-padding justify-content-end">
-                                 <?php the_author(); ?>
-								
-								<img class="img-fluid user-img" src="img/user.jpg" alt="">
+                               
+									<img src="<?php bloginfo('template_directory');?>/img/c1.jpg">
 							</div>
 						</div>												
 					</div>
