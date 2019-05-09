@@ -9,13 +9,13 @@
                             <div class="container">
                                 <div class="row justify-content-center">
                                     <div class="single-posts col-lg-6 col-sm-6">
-                                        <img class="img-fluid" src="img/asset/p1.jpg" alt="">
-                                        <div class="date mt-20 mb-20">10 Jan 2018</div>
+                                          <img class="img-fluid" src="<?php bloginfo('template_directory');?>/img/1.jpg" alt="">
+                                        
                                         <a href="#"><h4 class="text-uppercase">It S Hurricane Season Visiting </h4></a>
                                     </div>
                                     <div class="single-posts col-lg-6 col-sm-6">
-                                        <img class="img-fluid" src="img/asset/p2.jpg" alt="">
-                                        <div class="date mt-20 mb-20">10 Jan 2018</div>
+                                        <img class="img-fluid" src="<?php bloginfo('template_directory');?>/img/24.jpg" alt="">
+                                        
                                         <a href="#"><h4 class="text-uppercase">What Makes A Hotel Boutique</h4></a>
                                     </div>                                    
                                 </div> 
@@ -24,10 +24,8 @@
                         <div class="post-lists">
                             <div class="single-list flex-row d-flex">
                                 <div class="thumb">
-                                    <div class="date">
-                                        <span>20</span><br>Dec
-                                    </div>
-                                    <img src="img/asset/l1.jpg" alt="">
+                                    
+                                       <img class="img-fluid" src="<?php bloginfo('template_directory');?>/img/15063.jpg" alt="">
                                 </div>
                                 <div class="detail">
                                     <a href="#"><h4 class="pb-20">Addiction When Gambling <br>
@@ -43,10 +41,8 @@
                             </div>
                             <div class="single-list flex-row d-flex">
                                 <div class="thumb">
-                                    <div class="date">
-                                        <span>20</span><br>Dec
-                                    </div>
-                                    <img src="img/asset/l2.jpg" alt="">
+                                    
+                                       <img class="img-fluid" src="<?php bloginfo('template_directory');?>/img/29.jpg" alt="">
                                 </div>
                                 <div class="detail">
                                     <a href="#"><h4 class="pb-20">Addiction When Gambling <br>
@@ -62,10 +58,8 @@
                             </div>
                             <div class="single-list flex-row d-flex">
                                 <div class="thumb">
-                                    <div class="date">
-                                        <span>20</span><br>Dec
-                                    </div>
-                                    <img src="img/asset/l3.jpg" alt="">
+                                  
+                                       <img class="img-fluid" src="<?php bloginfo('template_directory');?>/img/8815.jpg" alt="">
                                 </div>
                                 <div class="detail">
                                     <a href="#"><h4 class="pb-20">Addiction When Gambling <br>
@@ -81,10 +75,8 @@
                             </div>
                             <div class="single-list flex-row d-flex">
                                 <div class="thumb">
-                                    <div class="date">
-                                        <span>20</span><br>Dec
-                                    </div>
-                                    <img src="img/asset/l4.jpg" alt="">
+                                    
+                                      <img class="img-fluid" src="<?php bloginfo('template_directory');?>/img/23541.jpg" alt="">
                                 </div>
                                 <div class="detail">
                                     <a href="#"><h4 class="pb-20">Addiction When Gambling <br>
@@ -106,8 +98,8 @@
                             <div class="container">
                                 <div class="row justify-content-center">
                                     <div class="single-posts col-lg-6 col-sm-6">
-                                        <img class="img-fluid" src="img/asset/p1.jpg" alt="">
-                                        <div class="date mt-20 mb-20">10 Jan 2018</div>
+                                          <img class="img-fluid" src="<?php bloginfo('template_directory');?>/img/classique1.jpg" alt="">
+                                        
                                         <div class="detail">
                                             <a href="#"><h4 class="pb-20">Addiction When Gambling <br>
                                             Becomes A Problem</h4></a>
@@ -121,8 +113,8 @@
                                         </div>
                                     </div>
                                     <div class="single-posts col-lg-6 col-sm-6">
-                                        <img class="img-fluid" src="img/asset/p2.jpg" alt="">
-                                        <div class="date mt-20 mb-20">10 Jan 2018</div>
+                                           <img class="img-fluid" src="<?php bloginfo('template_directory');?>/img/classique2.jpg" alt="">
+                                        
                                         <div class="detail">
                                             <a href="#"><h4 class="pb-20">Addiction When Gambling <br>
                                             Becomes A Problem</h4></a>
@@ -149,4 +141,3 @@
         <!-- End post Area -->  
     </div>
     <!-- End post Area -->
-          
