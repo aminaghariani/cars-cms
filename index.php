@@ -1,6 +1,13 @@
-		<!-- End Header Area -->
-			<?php get_header();?>
-			<!-- start banner Area -->
+<?php get_header();?>
+<div class="row">  
+ <div class="col-sm-8 blog-main"> 
+ <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>   <!-- contents of the loop --> <?php endwhile;?>
+     <nav>
+ <ul class="pager">
+<li><?php next_posts_link( 'Previous' ); ?></li>
+<li><?php previous_posts_link( 'Next' ); ?></li>
+ </ul>
+</nav> <?php endif; ?>
 			<?php get_template_part( 'sections', get_post_format() ); ?>
 			<?php get_template_part( 'content', get_post_format() ); ?>
 			
@@ -10,7 +17,8 @@
 
 </div>
 			
-			<!-- End team Area -->
-			
-			<!-- start footer Area -->		
+			 <h1>Title</h1>
+<?php the_title();?>
+<h1>Content</h1>
+<?php the_content();?>	
 			<?php get_footer(); ?> 

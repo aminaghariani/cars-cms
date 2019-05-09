@@ -10,7 +10,6 @@
 						</div>
 					</div>					
 					<div class="row">
-					
 						<div class="col-lg-3 col-md-6 single-fashion">
 							<img class="img-fluid" src="img/f1.jpg" alt="">
 							<p class="date">10 Jan 2018</p>
@@ -83,10 +82,10 @@
 					<div class="row justify-content-center d-flex align-items-center">
 						<div class="col-lg-6 team-left">
 							<p>
-								inappropriate behavior is often laughed off as ìboys will be boys,î women face higher conduct standards especially in the workplace. Thatís why itís crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed off as ìboys will be boys,î women face higher conduct standards especially in the workplace. Thatís why itís crucial that.
+								inappropriate behavior is often laughed off as ‚Äúboys will be boys,‚Äù women face higher conduct standards especially in the workplace. That‚Äôs why it‚Äôs crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed off as ‚Äúboys will be boys,‚Äù women face higher conduct standards especially in the workplace. That‚Äôs why it‚Äôs crucial that.
 							</p>
 							<p>
-								inappropriate behavior is often laughed off as ìboys will be boys,î women face higher conduct standards especially in the workplace. Thatís why itís crucial that, as women.
+								inappropriate behavior is often laughed off as ‚Äúboys will be boys,‚Äù women face higher conduct standards especially in the workplace. That‚Äôs why it‚Äôs crucial that, as women.
 							</p>
 						</div>
 						<div class="col-lg-6 team-right d-flex justify-content-center">
