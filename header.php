@@ -8,7 +8,7 @@
 		<!-- Author Meta -->
 		<meta name="author" content="colorlib">
 		<!-- Meta Description -->
-		<meta name="description" content="">
+		<meta name="<?php echo get_bloginfo( 'description' ); ?>" content="">
 		<!-- Meta Keyword -->
 		<meta name="keywords" content="">
 		<!-- meta character set -->
@@ -71,6 +71,7 @@ rel="stylesheet">
                           </div>                        
                     </div>
                 </nav>
+                <?php wp_head();?>
             </header>
             <!-- End Header Area -->
               <!-- Start top-section Area -->
@@ -78,14 +79,16 @@ rel="stylesheet">
                 <div class="container">
                     <div class="row justify-content-between align-items-center d-flex">
                         <div class="col-lg-8 top-left">
-                            <h1 class="text-white mb-20">Fashion News</h1>
-                            <ul>
-                                <li><a href="index.html">Home</a><span class="lnr lnr-arrow-right"></span></li>
-                                <li><a href="category.html">Category</a><span class="lnr lnr-arrow-right"></span></li>
-                                <li><a href="single.html">Fashion</a></li>
-                            </ul>
+                           <div class="blog-header">
+ <h1 class="blog-title">
+ <a href="<?php bloginfo( 'wpurl' );?>"><?php echo
+get_bloginfo( 'name' ); ?></a></h1>
+ <p class="lead blog-description"><?php echo get_bloginfo(
+'description' ); ?></p>
+</div> 
                         </div>
                     </div>
                 </div>  
+                
             </section>
             <!-- End top-section Area -->
