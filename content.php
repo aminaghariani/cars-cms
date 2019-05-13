@@ -3,7 +3,7 @@
       <a href="<?php the_permalink(); ?>">
           <?php the_title(); ?></a></h2>
      <img class="img-fluid" src="<?php bloginfo('template_directory');?>/img/35848.jpg" alt="" height="300" width="300">
-     <a href="<?php the_permalink(); ?>">
+    <h2 class="blog-post-title"> <a href="<?php the_permalink(); ?>">
           <?php the_title(); ?></a></h2>
      <img class="img-fluid" src="<?php bloginfo('template_directory');?>/img/32180.jpg" alt="" height="300" width="300">
  <p class="blog-post-meta">
