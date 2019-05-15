@@ -1,4 +1,5 @@
 <div class="col-lg-4 sidebar-area">
+
                         <div class="single_widget search_widget">
                             <div id="imaginary_container"> 
                                 <div class="input-group stylish-input-group">
@@ -13,19 +14,20 @@
                         </div>
 
                         <div class="single_widget about_widget">
-                            <img src="img/asset/s-img.jpg" alt="">
-                            <h2 class="text-uppercase">Adele Gonzalez</h2>
-                            <p>
-                                MCSE boot camps have its supporters and
-                                its detractors. Some people do not understand why you should have to spend money
-                            </p>
+							 <img class="img-fluid" src="<?php bloginfo('template_directory');?>/img/30531.jpg" alt="" height="300" width="300">
+                          
+						  <h2 class="text-uppercase">Adele Gonzalez</h2> <p><?php the_author_meta( 'description' ); ?> </p>       
+                           
                             <div class="social-link">
-                                <a href="#"><button class="btn"><i class="fa fa-facebook" aria-hidden="true"></i> Like</button></a>
-                                <a href="#"><button class="btn"><i class="fa fa-twitter" aria-hidden="true"></i> follow</button></a>
+                                <a href="href="<?php echo get_option('facebook'); ?>"><button class="btn"><i class="fa fa-facebook" aria-hidden="true"></i> Like</button></a>
+                                <a href="<?php echo get_option('twitter'); ?>"><button class="btn"><i class="fa fa-twitter" aria-hidden="true"></i> follow</button></a>
                             </div>
                         </div>
                         <div class="single_widget cat_widget">
-                            <h4 class="text-uppercase pb-20">post categories</h4>
+                            
+							
+						  <h4 class="text-uppercase pb-20">post categories</h4> <p><?php the_author_meta( 'description' ); ?> </p>       
+                           
                             <ul>
                                 <li>
                                     <a href="#">Technology <span>37</span></a>
@@ -52,36 +54,47 @@
                         </div>
 
                         <div class="single_widget recent_widget">
-                            <h4 class="text-uppercase pb-20">Recent Posts</h4>
+                            
+							   <h4 class="text-uppercase pb-20">Recent Posts</h4> <p><?php the_author_meta( 'description' ); ?> </p>   
                             <div class="active-recent-carusel">
                                 <div class="item">
                                     <img src="img/asset/slider.jpg" alt="">
                                     <p class="mt-20 title text-uppercase">Home Audio Recording <br>
                                     For Everyone</p>
-                                    <p>02 Hours ago <span> <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                    06 <i class="fa fa-comment-o" aria-hidden="true"></i>02</span></p>    
+                                   
+<a href="<?php comments_link(); ?>"> <?php printf( _nx( '	 <p>02 Hours ago <span> <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                    06 <i class="fa fa-comment-o" aria-hidden="true"></i>02</span></p>  ',
+'%1$s Comments', get_comments_number(), 'comments title', 'textdomain' ),
+number_format_i18n( get_comments_number() ) ); ?> </a> 
                                 </div>  
                                 <div class="item">
                                     <img src="img/asset/slider.jpg" alt="">
                                     <p class="mt-20 title text-uppercase">Home Audio Recording <br>
                                     For Everyone</p>
-                                    <p>02 Hours ago <span> <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                    06 <i class="fa fa-comment-o" aria-hidden="true"></i>02</span></p>    
+                                   
+								 
+									<a href="<?php comments_link(); ?>"> <?php printf( _nx( '	 <p>02 Hours ago <span> <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                    06 <i class="fa fa-comment-o" aria-hidden="true"></i>02</span></p> ',
+'%1$s Comments', get_comments_number(), 'comments title', 'textdomain' ),
+number_format_i18n( get_comments_number() ) ); ?> </a>  
                                 </div>  
                                 <div class="item">
                                     <img src="img/asset/slider.jpg" alt="">
                                     <p class="mt-20 title text-uppercase">Home Audio Recording <br>
                                     For Everyone</p>
-                                    <p>02 Hours ago <span> <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                    06 <i class="fa fa-comment-o" aria-hidden="true"></i>02</span></p>    
+                                   									<a href="<?php comments_link(); ?>"> <?php printf( _nx( '	 <p>02 Hours ago <span> <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                    06 <i class="fa fa-comment-o" aria-hidden="true"></i>02</span></p> ',
+'%1$s Comments', get_comments_number(), 'comments title', 'textdomain' ),
+number_format_i18n( get_comments_number() ) ); ?> </a>
                                 </div>                                                                                            
                             </div>
                         </div>  
 
 
                         <div class="single_widget cat_widget">
-                            <h4 class="text-uppercase pb-20">post archive</h4>
+                            <h4 class="text-uppercase pb-20">post archive</h4><p><?php wp_get_archives( 'type=monthly' ); ?>    
                             <ul>
+							
                                 <li>
                                     <a href="#">Dec'17 <span>37</span></a>
                                 </li>
@@ -106,7 +119,7 @@
                             </ul>
                         </div> 
                         <div class="single_widget tag_widget">
-                            <h4 class="text-uppercase pb-20">Tag Clouds</h4>
+                            <h4 class="text-uppercase pb-20">Tag Clouds</h4><p><?php the_author_meta( 'description' ); ?> </p>    
                             <ul>
                                 <li><a href="#">Lifestyle</a></li>
                                 <li><a href="#">Art</a></li>
@@ -120,3 +133,4 @@
                             </ul>
                         </div>                                                 
                     </div>
+				
