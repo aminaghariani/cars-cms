@@ -14,9 +14,9 @@
                         </div>
 
                         <div class="single_widget about_widget">
-							 <img class="img-fluid" src="<?php bloginfo('template_directory');?>/img/30531.jpg" alt="" height="300" width="300">
+							 <img class="img-fluid" src="<?php bloginfo('template_directory');?>/img/s-img.jpg" alt="" height="300" width="300"><br />
                           
-						  <h2 class="text-uppercase">Adele Gonzalez</h2> <p><?php the_author_meta( 'description' ); ?> </p>       
+						  <h2> <?php the_author(); ?> <h2><br /><?php the_author_meta( 'description' ); ?>       
                            
                             <div class="social-link">
                                 <a href="href="<?php echo get_option('facebook'); ?>"><button class="btn"><i class="fa fa-facebook" aria-hidden="true"></i> Like</button></a>
@@ -25,40 +25,19 @@
                         </div>
                         <div class="single_widget cat_widget">
                             
-							
-						  <h4 class="text-uppercase pb-20">post categories</h4> <p><?php the_author_meta( 'description' ); ?> </p>       
-                           
-                            <ul>
-                                <li>
-                                    <a href="#">Technology <span>37</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Lifestyle <span>37</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Fashion <span>37</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Art <span>37</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Food <span>37</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Architecture <span>37</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Adventure <span>37</span></a>
-                                </li>                                
-                            </ul>
+							<h2>les categories</h2>
+ 
+<?php the_category(); ?>
+
+                  
                         </div>
 
                         <div class="single_widget recent_widget">
                             
-							   <h4 class="text-uppercase pb-20">Recent Posts</h4> <p><?php the_author_meta( 'description' ); ?> </p>   
+							   <h4 class="text-uppercase pb-20">Recent Posts</h4> 
                             <div class="active-recent-carusel">
                                 <div class="item">
-                                    <img src="img/asset/slider.jpg" alt="">
+								 <img class="img-fluid" src="<?php bloginfo('template_directory');?>/img/30531.jpg" alt="" height="300" width="300">
                                     <p class="mt-20 title text-uppercase">Home Audio Recording <br>
                                     For Everyone</p>
                                    
@@ -93,30 +72,9 @@ number_format_i18n( get_comments_number() ) ); ?> </a>
 
                         <div class="single_widget cat_widget">
                             <h4 class="text-uppercase pb-20">post archive</h4><p><?php wp_get_archives( 'type=monthly' ); ?>    
-                            <ul>
-							
-                                <li>
-                                    <a href="#">Dec'17 <span>37</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Nov'17 <span>37</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Oct'17 <span>37</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Sept'17 <span>37</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Aug'17 <span>37</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Jul'17 <span>37</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Jun'17 <span>37</span></a>
-                                </li>                                
-                            </ul>
+                           
+<?php the_category(); ?>
+
                         </div> 
                         <div class="single_widget tag_widget">
                             <h4 class="text-uppercase pb-20">Tag Clouds</h4><p><?php the_author_meta( 'description' ); ?> </p>    
