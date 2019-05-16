@@ -73,12 +73,12 @@ number_format_i18n( get_comments_number() ) ); ?> </a>
                         <div class="single_widget cat_widget">
                             <h4 class="text-uppercase pb-20">post archive</h4><p><?php wp_get_archives( 'type=monthly' ); ?> </p>
                            
-<?php the_category(); ?>
+                               <?php the_category(); ?>
 
                         </div> 
                         <div class="single_widget tag_widget">
-                            <h4 class="text-uppercase pb-20">Tag Clouds</h4><p><?php the_author_meta( 'description' ); ?> </p>    
-                          
+                            <h4 class="text-uppercase pb-20">Tag Clouds</h4>   
+                        <?php wp_tag_cloud(); ?>
                         </div>                                                 
                     </div>
 				
