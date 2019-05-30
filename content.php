@@ -1,17 +1,27 @@
-<div class="blog-post"> 
-  <h2 class="blog-post-title">
-      <a href="<?php the_permalink(); ?>">
-          <?php the_title(); ?></a></h2>
-    
-    <?php if ( has_post_thumbnail() ) {?>
-    
-<div class="row">
+<div class="single-list flex-row d-flex">
+                                <div class="thumb">
+                                    <div class="date">
+                                        <span><?php the_date('d'); ?></span><br><?php the_date('m'); ?>
+                                    </div>
+                                    <?php the_post_thumbnail('thumbnail'); ?>
+                                    <div class="row">
 <div class="col-md-4"> <?php the_post_thumbnail('thumbnail'); ?>
-</div>
-<div class="col-md-6"> <?php the_content(); ?> </div>
-</div>
-<?php } else { ?>
-<?php the_content(); ?> <?php } ?>
+                                </div>
+                                <div class="detail">
+                                    <a href="<?php the_permalink(); ?>"><h4 class="pb-20"><?php
+the_title(); ?></h4></a>
+                                    <p>
+                             <?php the_author(); ?>
+                                    </p>
+                                    <p class="footer pt-20">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                    <a href="#">00 Likes</a>     <i class="ml-20 fa fa-comment-o" aria-hidden="true"></i> <a href="#"><?php echo ''.get_comments_number(); ?> Comments</a>
+                                    </p>
+                                </div>
+                            </div> 
+              
+       
 
-   </div><!-- /.blog-post --> 
+            
+
 

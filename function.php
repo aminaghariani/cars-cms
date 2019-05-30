@@ -1,29 +1,4 @@
 <?php
-function create_post_voiture(){
- register_post_type('voiture',
- array(
- 'labels'=>array(
- 'name'=>__('voitures'),
- ),
- 'public'=>true,
- 'hierarchical'=>true,
- 'has_archive'=>true,
- 'supports'=>array(
- 'title',
-'editor',
-'excerpt',
-'thumbnail',
- ),
- 'taxonomies'=>array(
- 'post_tag',
-'category',
- )
- )
-);
- register_taxonomy_for_object_type('category','voiture');
- register_taxonomy_for_object_type('post_tag','voiture');
-}
-add_action('init','create_post_voiture');
 function add_marque_meta_box(){
  add_meta_box(
  'marque_meta_box',// $id
@@ -35,12 +10,14 @@ function add_marque_meta_box(){
 );
 }
 add_action('add_meta_boxes','add_marque_meta_box');
+?>
+<?php
 function show_marque_meta_box(){
 global $post;
  $meta=get_post_meta($post->ID , 'marque' , true); ?>
 <input type="hidden" name="your_meta_box_nonce" value="
  <?php echo wp_create_nonce(basename(__FILE__) );?>">
-<!-- All fields will go here -->
+<!-- All fields will go here -->?>
  <?php
 }
 function save_marque_meta( $post_id ) {
@@ -70,11 +47,15 @@ if ( $new && $new !== $old ) {
 }
 }
 add_action( 'save_post', 'save_marque_meta' );
+?>
+<?php
 function custom_settings_add_menu() {
  add_menu_page( 'Custom Settings', 'Custom Settings', 'manage_options',
 'custom-settings', 'custom_settings_page', null, 99 );
 }
 add_action( 'admin_menu', 'custom_settings_add_menu' );
+?>
+<?php
 function add_your_fields_meta_box(){
  add_meta_box(
  'your_fields_meta_box',// $id
@@ -86,7 +67,7 @@ function add_your_fields_meta_box(){
 );
 }
 add_action('add_meta_boxes','add_your_fields_meta_box');
-// Create Custom Global Settings
+// Create Custom Global Settings 
 function custom_settings_page() { ?>
 <div class="wrap">
 <h1>Custom Settings</h1>
@@ -98,6 +79,7 @@ submit_button(); ?>
 </div>
 <?php }
 // Custom Post Type
+<?php
 function create_my_custom_post() {
 register_post_type( 'my-custom-post',
 array(
@@ -116,8 +98,9 @@ array(
 ));
 }
 add_action( 'init', 'create_my_custom_post' );
-
 // Twitter
+?>
+<?php
 function setting_twitter() { ?>
 <input type="text" name="twitter" id="twitter" value="<?php echo
 get_option( 'twitter' ); ?>" />
@@ -132,3 +115,52 @@ add_settings_field( 'twitter', 'Twitter URL', 'setting_twitter', 'themeoptions',
 add_settings_field( 'github', 'GitHub URL', 'setting_github', 'themeoptions', 'section' );
 register_setting( 'section', 'twitter' );
 register_setting( 'section', 'github' );
+?>
+<?php get_header(); ?>
+<div class="row">
+<div class="col-sm-12">
+<?php
+$args = array(
+'post_type' => 'my-custom-post',
+'orderby' => 'menu_order',
+'order' => 'ASC'
+);
+$custom_query = new WP_Query( $args );
+while ($custom_query->have_posts()) : $custom_query-
+>the_post(); ?>
+<div class="blog-post">
+<h2 class="blog-post-title"><a href="<?php
+the_permalink(); ?>"><?php the_title(); ?></a></h2>
+<?php the_excerpt(); ?>
+</div>
+<?php endwhile; ?>
+</div> <!-- /.col -->
+</div> <!-- /.row -->
+<?php get_footer(); ?>
+<?php
+function create_post_voiture(){
+ register_post_type('voiture',
+ array(
+ 'labels'=>array(
+ 'name'=>__('voitures'),
+ ),
+ 'public'=>true,
+ 'hierarchical'=>true,
+ 'has_archive'=>true,
+ 'supports'=>array(
+ 'title',
+'editor',
+'excerpt',
+'thumbnail',
+ ),
+ 'taxonomies'=>array(
+ 'post_tag',
+'category',
+ )
+ )
+);
+ register_taxonomy_for_object_type('category','voiture');
+ register_taxonomy_for_object_type('post_tag','voiture');
+}
+add_action('init','create_post_voiture');
+?>

@@ -18,7 +18,9 @@ $meta=get_post_meta($post->ID , 'voiture_fields' , true);?>
         </div>
     <?php endwhile; endif; wp_reset_postdata();?>
     </div>
-<?php endwhile; endif; wp_reset_postdata();?>
+<
     </div> <!-- /.col -->
-</div> <!-- /.row -->
+</div>
+
+
 <?php get_footer(); ?>
